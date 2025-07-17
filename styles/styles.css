@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: 100vh;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -28,27 +28,23 @@ body {
 }
 
 a:link {
-    color: rgb(118, 201, 231);
-    background-color: transparent;
-    text-decoration: none;
+    color: rgb(120, 192, 219);
+    text-decoration: underline;    
 }
 
 a:visited {
-    color: rgb(253, 223, 228);
-    background-color: transparent;
+    color: rgb(246, 183, 193);
     text-decoration: underline;
-    text-decoration-color: rgb(253, 223, 228);
 }
 
 a:active {
     color: rgb(237, 243, 220);
-    background-color: transparent;
     text-decoration: underline;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 815px) {
 
     body {
-        height: 50vh;
+        height: 100vh;
     }
 }

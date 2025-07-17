@@ -26,9 +26,24 @@ h1 {
     margin-bottom: 2rem;
     filter: drop-shadow(0 0 1em rgba(129, 129, 206, 0.57)) drop-shadow(0 0 0.2em rgba(145, 145, 206, 0.263));
   }
+
+.center{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
   
 .searchBar{
     width: 50rem;
+}
+
+footer {
+    height: 50px;
+    margin-top: 28vh;
+    margin-bottom: 1vh;
+    align-items: flex-end;
 }
 
 input#searchInput{
@@ -53,7 +68,7 @@ input#searchInput{
     right: 22px;
 } 
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 815px) {
 
     h1 {
         font-size: 45px;
@@ -75,5 +90,9 @@ input#searchInput{
         height: 20px;
         top: -35px;
         right: 20px;
+    }
+
+    #thankyou{
+        display: none;
     }
 }

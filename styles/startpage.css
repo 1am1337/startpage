@@ -77,6 +77,10 @@ input#searchInput{
         padding: 15px;
     }
 
+    .center{
+        margin-top: 2%;
+    }
+
     .searchBar{
         width: 15rem;
         padding: 10px;

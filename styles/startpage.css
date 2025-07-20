@@ -39,11 +39,11 @@ h1 {
     width: 50rem;
 }
 
-footer {
-    height: 50px;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    align-items: flex-end;
+.footer {
+    position: fixed;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
 }
 
 input#searchInput{

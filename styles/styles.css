@@ -45,6 +45,6 @@ a:active {
 @media screen and (max-width: 815px) {
 
     body {
-        height: 100vh;
+        height: 100%;
     }
 }

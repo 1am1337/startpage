@@ -1,6 +1,6 @@
 function searchDuckDuckGo() {
     const query = document.getElementById('searchInput').value;
-    const url = `https://www.duckduckgo.com/?q=${encodeURIComponent(query)}`;
+    const url = `https://noai.duckduckgo.com/?q=${encodeURIComponent(query)}`;
     window.location.href = url;
 }
 

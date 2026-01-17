@@ -11,7 +11,7 @@
     --gradient-end: #532bf2;
 }
 
-.mainText {
+h1 {
     font-family: 'Pacifico', serif;
     font-weight: 500;
     font-style: normal;
@@ -23,9 +23,8 @@
     line-height: 85px;
     text-align: center;
     padding: 40px 10px 95px;
-    margin-top: 5rem;
     margin-bottom: 2rem;
-    /*filter: drop-shadow(0 0 1em rgba(129, 129, 206, 0.57)) drop-shadow(0 0 0.2em rgba(145, 145, 206, 0.263));*/
+    /*filter: drop-shadow(0 0 40px rgba(129, 129, 206, 0.57));*/
   }
 
 .center{

@@ -13,16 +13,30 @@
     <link rel="stylesheet" href="styles/startpage.css">
 
     <script src="scripts/search.js" defer></script>
+    <script src="scripts/button.js" defer></script>
 
     <title>moyiesearch</title>
 </head>
+
+<header class ="header">
+    <div class="dropdown">
+        <button class="dropbtn" onclick="toggle()">☰</button>
+        <div class="dropdown-content" id="show-hide" style="display: none">
+            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/duckduckgo-icon.png"></a>
+            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/qwant-icon.png"></a>
+            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/ecosia-icon.png"></a>
+        </div>
+    </div> 
+</header>
+
 <body>
     <div class="center">
-    <h1>moyiesearch</h1>
+        <h1>moyiesearch</h1>
         <div class="searchBar">
-            <input type="text" id="searchInput" placeholder="Search DuckDuckGo...">
+            <input type="text" id="searchInput" placeholder="Search...">
             <a href="#" onclick="searchDuckDuckGo()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
         </div>
+        <p>provided by <a href="https://moyie.xyz">moyie.xyz</a></p>
     </div>
     <div class="footer">
         <p id="thankyou">This website was made possible by the kind donation of code by <a href="https://startpage.schasch.xyz/">schasch</a>.</p>

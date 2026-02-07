@@ -4,6 +4,7 @@ function toggle() {
     show();
     document.addEventListener('mouseup', function eventHandler(){
         hide();
+        this.removeEventListener('mouseup', eventHandler)
     });
     } else {
     hide();
@@ -16,5 +17,4 @@ function show() {
 
 function hide() {
     element.style.display = "none";
-    document.removeEventListener('mouseup', eventHandler);
 }

@@ -14,17 +14,18 @@
 
     <script src="scripts/search.js" defer></script>
     <script src="scripts/button.js" defer></script>
+    <script src="scripts/selection.js" defer></script>
 
-    <title>moyiesearch</title>
+    <title>moyiesearch rework</title>
 </head>
 
 <header class ="header">
     <div class="dropdown">
         <button class="dropbtn" onclick="toggle()">☰</button>
         <div class="dropdown-content" id="show-hide" style="display: none">
-            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/duckduckgo-icon.png"></a>
-            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/qwant-icon.png"></a>
-            <a href="#"><img class="logoIcon" onclick="hide()" src="assets/icons/ecosia-icon.png"></a>
+            <a href="#" onclick="selectDuckDuckGo()"><img class="logoIcon" src="assets/icons/duckduckgo-icon.png"></a>
+            <a href="#" onclick="selectQwant()"><img class="logoIcon" src="assets/icons/qwant-icon.png"></a>
+            <a href="#" onclick="selectEcosia()"><img class="logoIcon" src="assets/icons/ecosia-icon.png"></a>
         </div>
     </div> 
 </header>
@@ -32,9 +33,9 @@
 <body>
     <div class="center">
         <h1>moyiesearch</h1>
-        <div class="searchBar">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <a href="#" onclick="searchDuckDuckGo()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
+        <div class="searchBar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search DuckDuckGo...">
+            <a href="#" id="enterSearch" onclick="fireSearch()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
         </div>
         <p>provided by <a href="https://moyie.xyz">moyie.xyz</a></p>
     </div>

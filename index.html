@@ -13,16 +13,35 @@
     <link rel="stylesheet" href="styles/startpage.css">
 
     <script src="scripts/search.js" defer></script>
+    <script src="scripts/button.js" defer></script>
+    <script src="scripts/selection.js" defer></script>
 
-    <title>moyiesearch</title>
+    <title>moyiesearch rework</title>
 </head>
+
+<header class ="header">
+    <div class="dropdown">
+        <button class="dropbtn" onclick="toggle()">☰</button>
+        <div class="dropdown-content" id="show-hide" style="display: none">
+            <a href="#" onclick="selectDuckDuckGo()"><img class="logoIcon" src="assets/icons/duckduckgo-icon.png"></a>
+            <a href="#" onclick="selectQwant()"><img class="logoIcon" src="assets/icons/qwant-icon.png"></a>
+            <a href="#" onclick="selectEcosia()"><img class="logoIcon" src="assets/icons/ecosia-icon.png"></a>
+        </div>
+    </div> 
+</header>
+
 <body>
     <div class="center">
         <h1>moyiesearch</h1>
-        <div class="searchBar">
+        <div class="searchBar" id="searchBar">
             <input type="text" id="searchInput" placeholder="Search DuckDuckGo...">
-            <a href="#" onclick="searchDuckDuckGo()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
+            <a href="#" id="enterSearch" onclick="fireSearch()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
         </div>
+        <p class="advertisement">
+            service provided by
+            <img class="moyiecon" src="assets/icons/favicon.png"></img>
+            <a href="https://moyie.xyz">moyie.xyz</a>
+        </p>
     </div>
     <div class="footer">
         <p id="thankyou">This website was made possible by the kind donation of code by <a href="https://startpage.schasch.xyz/">schasch</a>.</p>

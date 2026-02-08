@@ -13,20 +13,17 @@ if (cookieValue === "engine=duckduckgo") {
 function selectDuckDuckGo() {
     document.getElementById('searchInput').placeholder = "Search DuckDuckGo...";
     document.cookie = "engine=duckduckgo";
-    console.log("engine=duchduckgo");
     hide();
 }
 
 function selectQwant() {
     document.getElementById('searchInput').placeholder = "Search Qwant...";
     document.cookie = "engine=qwant";
-    console.log("engine=qwant");
     hide();
 }
 
 function selectEcosia() {
     document.getElementById('searchInput').placeholder = "Search Ecosia...";
     document.cookie = "engine=ecosia";
-    console.log("engine=ecosia");
     hide();
 }

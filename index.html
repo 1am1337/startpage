@@ -16,12 +16,13 @@
     <script src="scripts/button.js" defer></script>
     <script src="scripts/selection.js" defer></script>
 
-    <title>moyiesearch rework</title>
+    <title>moyiesearch</title>
 </head>
 
 <header class ="header">
     <div class="dropdown">
-        <button class="dropbtn" onclick="toggle()">☰</button>
+        <button class="dropbtn" id="open" onclick="toggle()" style="display: block;">☰</button>
+        <button class="dropbtn" id="close" style="display: none">×</button>
         <div class="dropdown-content" id="show-hide" style="display: none">
             <a href="#" onclick="selectDuckDuckGo()"><img class="logoIcon" src="assets/icons/duckduckgo-icon.png"></a>
             <a href="#" onclick="selectQwant()"><img class="logoIcon" src="assets/icons/qwant-icon.png"></a>

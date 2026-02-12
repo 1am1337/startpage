@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="styles/startpage.css">
 
     <script src="scripts/search.js" defer></script>
+    <script src="scripts/button.js" defer></script>
+    <script src="scripts/selection.js" defer></script>
 
     <title>Homepage</title>
 </head>
 
+<<<<<<< HEAD
 <body>
     <div class="center">
         <h1>wow search title</h1>
@@ -26,6 +29,32 @@
             <a href="#" onclick="searchEcosia()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
         </div>
 
+=======
+<header class ="header">
+    <div class="dropdown">
+        <button class="dropbtn" id="open" onclick="toggle()" style="display: block;">☰</button>
+        <button class="dropbtn" id="close" style="display: none">×</button>
+        <div class="dropdown-content" id="show-hide" style="display: none">
+            <a href="#" onclick="selectDuckDuckGo()"><img class="logoIcon" src="assets/icons/duckduckgo-icon.png"></a>
+            <a href="#" onclick="selectQwant()"><img class="logoIcon" src="assets/icons/qwant-icon.png"></a>
+            <a href="#" onclick="selectEcosia()"><img class="logoIcon" src="assets/icons/ecosia-icon.png"></a>
+        </div>
+    </div> 
+</header>
+
+<body>
+    <div class="center">
+        <h1>moyiesearch</h1>
+        <div class="searchBar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search DuckDuckGo...">
+            <a href="#" id="enterSearch" onclick="fireSearch()"><img class="searchIcon" src="assets/icons/searchicon.png"></a>
+        </div>
+        <p class="advertisement">
+            service provided by
+            <img class="moyiecon" src="assets/icons/favicon.png"></img>
+            <a href="https://moyie.xyz">moyie.xyz</a>
+        </p>
+>>>>>>> f91409453251ba191a85d3ac33b3f7b63c9a1877
     </div>
     <div class="footer">
         <p id="thankyou">This website was made possible by the kind donation of code by <a href="https://startpage.moyie.xyz/">moyie</a>.</p>

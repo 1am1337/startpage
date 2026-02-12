@@ -24,7 +24,7 @@ h1 {
     text-align: center;
     padding: 40px 10px 95px;
     margin-bottom: 2rem;
-    filter: drop-shadow(0 0 1em rgba(129, 129, 206, 0.57)) drop-shadow(0 0 0.2em rgba(145, 145, 206, 0.263));
+    filter:drop-shadow(0px 0px 10px #8181ce);
   }
 
 .center{
@@ -38,6 +38,15 @@ h1 {
 .searchBar{
     width: 50rem;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
 
 .footer {
     position: fixed;
@@ -76,7 +85,6 @@ input#searchInput{
         margin: 0 auto;
         padding: 15px;
     }
-
     .center{
         margin-top: 30%;
     }
@@ -85,6 +93,8 @@ input#searchInput{
         width: 15rem;
         padding: 10px;
     }
+
+
 
     input#searchInput{
         width: 80%;
